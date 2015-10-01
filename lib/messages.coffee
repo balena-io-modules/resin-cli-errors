@@ -67,6 +67,8 @@ module.exports =
 		else
 			message += 'Try running this command again prefixing it with `sudo`.'
 
+		message += '\n\nIf this is not the case, and you\'re trying to burn an SDCard, check that the write lock is not set.'
+
 		return message
 
 	###*

@@ -49,6 +49,8 @@ describe 'Errors:', ->
 			m.chai.expect(message).to.equal '''
 				You don\'t have enough privileges to run this operation.
 				Run a new Command Prompt as administrator and try running this command again.
+
+				If this is not the case, and you're trying to burn an SDCard, check that the write lock is not set.
 			'''
 
 		it 'should interpret EACCES', ->
@@ -60,6 +62,8 @@ describe 'Errors:', ->
 			m.chai.expect(message).to.equal '''
 				You don\'t have enough privileges to run this operation.
 				Run a new Command Prompt as administrator and try running this command again.
+
+				If this is not the case, and you're trying to burn an SDCard, check that the write lock is not set.
 			'''
 
 	describe 'given non windows', ->
@@ -80,6 +84,8 @@ describe 'Errors:', ->
 			m.chai.expect(message).to.equal '''
 				You don\'t have enough privileges to run this operation.
 				Try running this command again prefixing it with `sudo`.
+
+				If this is not the case, and you're trying to burn an SDCard, check that the write lock is not set.
 			'''
 
 		it 'should interpret EACCES', ->
@@ -91,6 +97,8 @@ describe 'Errors:', ->
 			m.chai.expect(message).to.equal '''
 				You don\'t have enough privileges to run this operation.
 				Try running this command again prefixing it with `sudo`.
+
+				If this is not the case, and you're trying to burn an SDCard, check that the write lock is not set.
 			'''
 
 		it 'should return undefined given an unknown error without a message', ->

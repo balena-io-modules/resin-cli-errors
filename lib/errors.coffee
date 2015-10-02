@@ -49,4 +49,11 @@ messages = require('./messages')
 ###
 exports.interpret = (error) ->
 	return if error not instanceof Error
-	return messages[error.code]?.call(messages, error) or error.message or undefined
+	message = messages[error.code]?.call(messages, error)
+	return message if message?
+
+	if not _.isEmpty(error.message)
+		if error.code?
+			return "#{error.code}: #{error.message}"
+		else
+			return error.message

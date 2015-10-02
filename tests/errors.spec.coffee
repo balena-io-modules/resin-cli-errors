@@ -112,6 +112,13 @@ describe 'Errors:', ->
 			message = errors.interpret(error)
 			m.chai.expect(message).to.equal('Hello World')
 
+		it 'should return the message along with the code given a non recognised error', ->
+			error = new Error()
+			error.message = 'Hello World'
+			error.code = 'EFOO'
+			message = errors.interpret(error)
+			m.chai.expect(message).to.equal('EFOO: Hello World')
+
 	describe 'given invalid inputs', ->
 
 		it 'should return undefined if object is not an instance of Error', ->

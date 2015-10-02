@@ -53,9 +53,19 @@ messages = require('./messages');
  */
 
 exports.interpret = function(error) {
-  var _ref;
+  var message, _ref;
   if (!(error instanceof Error)) {
     return;
   }
-  return ((_ref = messages[error.code]) != null ? _ref.call(messages, error) : void 0) || error.message || void 0;
+  message = (_ref = messages[error.code]) != null ? _ref.call(messages, error) : void 0;
+  if (message != null) {
+    return message;
+  }
+  if (!_.isEmpty(error.message)) {
+    if (error.code != null) {
+      return "" + error.code + ": " + error.message;
+    } else {
+      return error.message;
+    }
+  }
 };

@@ -81,5 +81,13 @@ module.exports = {
    */
   EACCES: function() {
     return this.EPERM();
+  },
+
+  /**
+  	 * @property {Function} ETIMEDOUT
+  	 * @memberof messages
+   */
+  ETIMEDOUT: function() {
+    return 'Oops something went wrong, please check your connection and try again.';
   }
 };

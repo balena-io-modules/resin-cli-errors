@@ -77,3 +77,10 @@ module.exports =
 	###
 	EACCES: ->
 		return @EPERM()
+
+	###*
+	# @property {Function} ETIMEDOUT
+	# @memberof messages
+	###
+	ETIMEDOUT: ->
+		return 'Oops something went wrong, please check your connection and try again.'

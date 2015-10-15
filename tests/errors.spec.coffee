@@ -31,6 +31,13 @@ describe 'Errors:', ->
 			Head over to http://git-scm.com to install it and run this command again.
 		'''
 
+	it 'should interpret ETIMEDOUT', ->
+		error = new Error()
+		error.code = 'ETIMEDOUT'
+
+		message = errors.interpret(error)
+		m.chai.expect(message).to.equal('Oops something went wrong, please check your connection and try again.')
+
 	describe 'given windows', ->
 
 		beforeEach ->

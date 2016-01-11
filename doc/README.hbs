@@ -6,6 +6,8 @@ resin-cli-errors
 [![Build Status](https://travis-ci.org/resin-io/resin-cli-errors.svg?branch=master)](https://travis-ci.org/resin-io/resin-cli-errors)
 [![Build status](https://ci.appveyor.com/api/projects/status/bv3j3fe5pe3dw7j6?svg=true)](https://ci.appveyor.com/project/resin-io/resin-cli-errors)
 
+Join our online chat at [![Gitter chat](https://badges.gitter.im/resin-io/chat.png)](https://gitter.im/resin-io/chat)
+
 Resin.io CLI error interpreter.
 
 Role

@@ -55,6 +55,9 @@ exports.interpret = function(error) {
   }
   if (!_.isEmpty(error.message)) {
     if (error.code != null) {
+      if (_.startsWith(error.code, 'Resin')) {
+        return error.message;
+      }
       return "" + error.code + ": " + error.message;
     } else {
       return error.message;

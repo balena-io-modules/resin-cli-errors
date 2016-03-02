@@ -1,5 +1,6 @@
 m = require('mochainon')
 os = require('os')
+sdkErrors = require('resin-errors')
 errors = require('../lib/errors')
 
 describe 'Errors:', ->
@@ -139,3 +140,8 @@ describe 'Errors:', ->
 		it 'should return undefined if input is an array', ->
 			message = errors.interpret([ 'ENOENT' ])
 			m.chai.expect(message).to.be.undefined
+
+	it 'should interpret a Resin SDK errors', ->
+		error = new sdkErrors.ResinNotLoggedIn()
+		message = errors.interpret(error)
+		m.chai.expect(message).to.equal('You have to log in')

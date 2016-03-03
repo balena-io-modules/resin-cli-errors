@@ -33,8 +33,7 @@
     "gulp-util": "~3.0.1",
     "jsdoc-to-markdown": "^1.1.1",
     "mocha": "~2.0.1",
-    "mochainon": "^1.0.0",
-    "resin-errors": "^2.2.0"
+    "mochainon": "^1.0.0"
   },
   "dependencies": {
     "lodash": "^3.10.1"

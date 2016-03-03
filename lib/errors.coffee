@@ -46,9 +46,6 @@ exports.interpret = (error) ->
 
 	if not _.isEmpty(error.message)
 		if error.code?
-			if _.startsWith(error.code, 'Resin')
-				return error.message
-
 			return "#{error.code}: #{error.message}"
 		else
 			return error.message

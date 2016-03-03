@@ -1,5 +1,6 @@
 m = require('mochainon')
 os = require('os')
+sdkErrors = require('resin-errors')
 errors = require('../lib/errors')
 
 describe 'Errors:', ->
@@ -106,6 +107,17 @@ describe 'Errors:', ->
 				Try running this command again prefixing it with `sudo`.
 
 				If this is not the case, and you're trying to burn an SDCard, check that the write lock is not set.
+			'''
+
+		it 'should interpret ResinExpiredToken', ->
+			error = new sdkErrors.ResinExpiredToken('1234')
+			message = errors.interpret(error)
+			m.chai.expect(message).to.equal '''
+				Looks like your session token is expired.
+
+				Please try logging in again with:
+
+					$ resin login
 			'''
 
 		it 'should return undefined given an unknown error without a message', ->

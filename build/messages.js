@@ -81,5 +81,8 @@ module.exports = {
    */
   ETIMEDOUT: function() {
     return 'Oops something went wrong, please check your connection and try again.';
+  },
+  ResinExpiredToken: function() {
+    return 'Looks like your session token is expired.\n\nPlease try logging in again with:\n\n	$ resin login';
   }
 };

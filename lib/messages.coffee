@@ -76,3 +76,12 @@ module.exports =
 	###
 	ETIMEDOUT: ->
 		return 'Oops something went wrong, please check your connection and try again.'
+
+	ResinExpiredToken: ->
+		return '''
+			Looks like your session token is expired.
+
+			Please try logging in again with:
+
+				$ resin login
+		'''

@@ -2,9 +2,9 @@ resin-cli-errors
 ----------------
 
 [![npm version](https://badge.fury.io/js/resin-cli-errors.svg)](http://badge.fury.io/js/resin-cli-errors)
-[![dependencies](https://david-dm.org/resin-io/resin-cli-errors.png)](https://david-dm.org/resin-io/resin-cli-errors.png)
-[![Build Status](https://travis-ci.org/resin-io/resin-cli-errors.svg?branch=master)](https://travis-ci.org/resin-io/resin-cli-errors)
-[![Build status](https://ci.appveyor.com/api/projects/status/bv3j3fe5pe3dw7j6?svg=true)](https://ci.appveyor.com/project/resin-io/resin-cli-errors)
+[![dependencies](https://david-dm.org/resin-io-modules/resin-cli-errors.png)](https://david-dm.org/resin-io-modules/resin-cli-errors.png)
+[![Build Status](https://travis-ci.org/resin-io-modules/resin-cli-errors.svg?branch=master)](https://travis-ci.org/resin-io-modules/resin-cli-errors)
+[![Build status](https://ci.appveyor.com/api/projects/status/bv3j3fe5pe3dw7j6/branch/master?svg=true)](https://ci.appveyor.com/project/resin-io/resin-cli-errors/branch/master)
 
 Join our online chat at [![Gitter chat](https://badges.gitter.im/resin-io/chat.png)](https://gitter.im/resin-io/chat)
 
@@ -53,7 +53,7 @@ console.log(message)
 Support
 -------
 
-If you're having any problem, please [raise an issue](https://github.com/resin-io/resin-cli-errors/issues/new) on GitHub and the Resin.io team will be happy to help.
+If you're having any problem, please [raise an issue](https://github.com/resin-io-modules/resin-cli-errors/issues/new) on GitHub and the Resin.io team will be happy to help.
 
 Tests
 -----
@@ -67,8 +67,8 @@ $ gulp test
 Contribute
 ----------
 
-- Issue Tracker: [github.com/resin-io/resin-cli-errors/issues](https://github.com/resin-io/resin-cli-errors/issues)
-- Source Code: [github.com/resin-io/resin-cli-errors](https://github.com/resin-io/resin-cli-errors)
+- Issue Tracker: [github.com/resin-io-modules/resin-cli-errors/issues](https://github.com/resin-io-modules/resin-cli-errors/issues)
+- Source Code: [github.com/resin-io-modules/resin-cli-errors](https://github.com/resin-io-modules/resin-cli-errors)
 
 Before submitting a PR, please make sure that you include tests, and that [coffeelint](http://www.coffeelint.org/) runs without any warning:
 

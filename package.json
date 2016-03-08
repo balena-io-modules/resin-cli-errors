@@ -3,10 +3,10 @@
   "version": "1.2.0",
   "description": "Resin.io CLI error interpreter",
   "main": "build/errors.js",
-  "homepage": "https://github.com/resin-io/resin-cli-errors",
+  "homepage": "https://github.com/resin-io-modules/resin-cli-errors",
   "repository": {
     "type": "git",
-    "url": "git://github.com/resin-io/resin-cli-errors.git"
+    "url": "git://github.com/resin-io-modules/resin-cli-errors.git"
   },
   "keywords": [
     "resin",
